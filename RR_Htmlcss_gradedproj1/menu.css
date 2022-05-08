@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+}
+
+.heading {
+    padding: 1em;
+    background-color: rgb(80, 78, 78);
+    text-align: center;
+    color: white;
+}
+
+.heading h1 {
+    margin: 0;
+}
+
+.menu {
+    padding: 0.5em;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    background-color: rgb(159, 157, 157);
+}
+
+.menu-group {
+    padding: 0;
+    margin: 0;
+}
+
+.menu-group>li {
+    margin-right: 1em;
+    display: inline-block;
+    padding: 0.5em;
+    font-size: large;
+}
+
+.menu-group>li:hover {
+    background-color: black;
+}
+
+.menu-group>li a {
+    color: white;
+    text-decoration: none;
+}
+
+.sub-menu-group-container {
+    position: relative;
+}
+
+.sub-menu-group {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+/* The .sub-menu-group which is within the .sub-menu-group-container over which the user is hovering is to be shown */
+.sub-menu-group-container:hover .sub-menu-group {
+    display: block;
+}
+
+.sub-menu-group>li a {
+    position: relative;
+    display: inline-block;
+    width: 108px;
+    padding: 0.5em;
+    color: rgb(80, 80, 215);
+    background-color: rgb(235, 232, 232);
+    z-index: 2;
+}
+
+.sub-menu-group>li:hover a {
+    background-color: black;
+    color: white;
+}

@@ -1,0 +1,99 @@
+<!-- ! and Enter -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy</title>
+    
+    <!-- link:css -->
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="form.css">
+
+</head>
+
+<body>
+    <header class="heading">
+        <h1>Lab Test Form</h1>
+    </header>
+     <div class="lab">
+        <div class= "lab-form">
+            <form>
+                <table >
+                    <tr>
+                        <td colspan="2"><h2>1.Your Contact Details</h2></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="fullname" placeholder="Full Name"> </td>
+                        <td><input type="text" name="ParentId" placeholder="Patient Id if exists"> </td>
+                    </tr>
+                   
+                    <tr>
+                        <td><input type="text" name="number" placeholder="Contact Number"> </td>
+                        <td><input type="text" name="email" placeholder="Email Id"> </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><h2>2.Address</h2></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="houseno" placeholder="House Number"> </td>
+                        <td><input type="text" name="street" placeholder="Street"> </td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="area" placeholder="Area"> </td>
+                        <td><input type="text" name="district" placeholder="District"> </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><h2>3.Type of Test</h2></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="checkbox" name="radio-choice-0" id="radio-choice-0a" checked="checked">CBC<br>
+                            <input type="checkbox" name="radio-choice-0" id="radio-choice-0a">Complete Urine<br>
+                            <input type="checkbox" name="radio-choice-0" id="radio-choice-0a">Lipid Profile<br>
+                            <input type="checkbox" name="radio-choice-0" id="radio-choice-0a">Thyroid Stimulating Hormone(TSH)<br>
+                            <input type="checkbox" name="radio-choice-0" id="radio-choice-0a">Glucose Test<br>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><h2>4.Do you want a hard copy of the report also?</h2></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="radio" name="report-radio" id="radio-choice-0a" checked="checked">Yes
+                            <input type="radio" name="report-radio" id="radio-choice-0a">No
+
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2"><h2>5.Select Your Comfortable Date and Time</h2></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="datetime-local" id="datetime" name="datetime">
+                        </td>
+                    </tr>
+                   
+                    
+                </table>
+                <br>
+
+                <div>
+                    <button class="button button1">Reset</button>
+                   <button class="button button1">Submit</button>   
+                </div>
+            </form>
+        </div>
+        <div class="lab-img">
+            <img src="images/Lab-Test/lab-test.jpg" width="500" height="800">
+            
+        </div>
+    </div>
+ </body>
+
+</html>
